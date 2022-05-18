@@ -31,3 +31,4 @@ let Innov = new CarCl('Innov', 120, 23);
 Innov.accelerate(); // Accelerate 
 Innov.brake();
 console.log(Innov);
+ 
