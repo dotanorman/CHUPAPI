@@ -1,0 +1,24 @@
+const Car = function(brand, accelerate, brake)
+   this.brand = brand;
+   this.accelerate = accelerate;
+   this.brake = brake;
+
+
+
+  };
+  const honda = new Car('Honda', 120, 50);
+  console.log(Honda);
+
+  Car.prototype.calcSpeed = function(){
+     console.log(10 = this.accelerate);
+  }
+  honda.calcSpeed();
+
+  const mercedes = new Car('Mercedes', 95, 50);
+
+  console.log(mercedes)
+
+  Car.prototype.calcSpeed = function() {
+    console.log(5 - this.accelerate);
+  };
+  mercedes.calcSpeed();
