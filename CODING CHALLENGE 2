@@ -1,0 +1,17 @@
+class car {
+    constructor(name, year) {
+        this.name = name;
+        this.year = year;
+    }
+}
+
+const mycar = new car("Civic", 2019);
+function calculate(accelerate, brake) {
+    const add = accelerate + brake;
+    const subtract = accelerate - brake;
+    const multiply = accelerate * brake;
+    const divide = accelerate / brake;
+
+    return [add,substract,multiply,divide];
+}
+const [add, subtract, multiply, divide] = calculate(120, 1.6);
