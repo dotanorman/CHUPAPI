@@ -1,4 +1,4 @@
-// codesandbox link https://codesandbox.io/s/stoic-villani-lt4m71
+// Codesandbox link https://codesandbox.io/s/stoic-villani-lt4m71
 class CarCl {
     constructor(cname, speed, charge) {
   this.cname = cname;
