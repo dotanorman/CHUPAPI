@@ -1,0 +1,28 @@
+// Factory Function
+function Stopwatch() { 
+  let startTime, endTime, running, duration = 0; // Variables 
+// Constructor Function
+  this.start = function() { // Function to start stopwatch.
+    if (running) // Constructor Function - If running is true.
+      throw new Error('Stopwatch has already started.'); // Error message if Stopwatch is already running.
+    running = true; // Boolean value
+    startTime = new Date();
+  };
+  this.stop = function() { // Function to stop stopwatch.
+    if (!running) // If running is false
+      throw new Error('Stopwatch is not started.'); // Error message if Stopwatch is not started.
+    running = false; // Boolean value
+    endTime = new Date(); 
+    const seconds = (endTime.getTime() - startTime.getTime()) / 1000;
+    duration += seconds; 
+  };
+  this.reset = function() { // Reset function for stopwatch
+    startTime = null; // Empty
+    endTime = null; // Empty
+    running = false; // Boolean value
+    duration = 0; 
+  };
+  Object.defineProperty(this, 'duration', {
+    get: function() { return duration; }
+  });
+}
