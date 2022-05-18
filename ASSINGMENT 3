@@ -1,0 +1,16 @@
+#1 Create a one line function that adds adds two parameters
+
+function add(x,y) {
+    x=1;
+    y=2;
+    return x+y;
+}
+add();
+
+//Closure: What does the last line return?
+
+const addTo = x => y => x + y
+var addToTen = addTo(10)
+addToTen(3)
+
+Answer: 13
