@@ -1,1 +1,32 @@
 
+#1. False
+
+
+
+#2. const object1 = { a: 5 };
+
+const object2 = object1;
+
+const object3 = object2;
+
+const object4 = { a: 5};
+
+object1.a = 4;
+
+Value is 4
+
+
+
+#3. class Animal {
+
+constructor(name, type, color) {
+
+this.name = name;
+
+this.type = type;
+
+this.color = color;
+
+}
+
+ }
