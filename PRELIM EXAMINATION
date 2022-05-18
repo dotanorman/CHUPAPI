@@ -1,0 +1,23 @@
+function calculator() {
+	var num1 =5;
+	var num2 =5;
+	var s = "division";
+
+	if(s === "Multiplication") {
+	// Multiplication
+	return num1 * num2;
+	}
+	else if (s === "division") {
+	return num1 / num2;
+	}
+	else if (s === "Addition") {
+	return num1 + num2;
+	}
+	else if (s ==="Subtraction") {
+	return num1 - num2;
+	}
+	else {
+	console.log("Invalid Input");
+	}
+]
+calculator();
